@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+footer  .men h1{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #ecba0b;
+    font-size:35px ;
+}
+footer .index .imeg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} 
+footer .index .imeg .img{
+    margin: 20px 10px 0px 10px;
+}
+
+footer .index .imeg- {
+    margin-top: -50px;
+   
+
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+ 
+}

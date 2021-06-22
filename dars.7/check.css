@@ -1,0 +1,58 @@
+*{ 
+    padding: 0px;
+    margin: 0px;
+
+}
+section{
+  
+    width: 100%;
+    height: 650px;
+    background: #e66768;
+}
+section .paragrf {
+    padding: 60px;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+
+}
+section .content-{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} 
+
+section .content- .conten{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    
+}
+section .content- .conten .leff{
+   margin: 30px 10px ;
+}
+section .content- .conten .leff .bir{
+   margin: 10% 0%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 150px;
+   width: 150px;
+
+    border-radius: 50%;
+    background: rgb(44, 44, 44);
+    opacity: 0.3;
+}
+section .content- .conten .leff .ikki{
+    display: flex;
+    justify-content: center;
+}
+section .content- .conten .leff button{
+    width: 110px;
+    height: 30px;
+    text-decoration: none;
+    text-transform: none;
+    display: flex;
+    justify-content: center;
+
+}

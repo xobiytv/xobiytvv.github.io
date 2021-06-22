@@ -1,2 +1,2 @@
 # xobiytv.github.io
-partfolio
+diyor

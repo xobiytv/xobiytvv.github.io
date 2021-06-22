@@ -1,0 +1,611 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.container span{
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 2px;
+    background: white;
+    transform: translateX(-170px);
+}
+
+#line2{
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 2px;
+    background: crimson;
+    transform: translateX(25px);
+}
+/* #line{
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 2px;
+    background: crimson;
+    transform: translateX(25px);
+} */
+
+#line2::after{
+    color: #667;
+}
+
+
+
+
+
+
+
+header{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    transition: .5s ease ;
+}
+header .sticky{
+    background: crimson;
+    padding: 10px 100px;
+}
+header .brand{
+    color: red;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .naviagtsion{
+    position: relative;
+}
+header .naviagtsion a{
+    color: rgb(199, 38, 38);
+    font-size: 20px;
+    font-weight:700 ;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: .5s ease ;
+
+}
+
+header .naviagtsion a:hover{
+    color: #667;
+
+}
+
+section{
+    padding: 100px;
+}
+.main{
+    position: relative;
+    width: 100%;
+    min-height:100vh ;
+    display: flex;
+    align-items: center;
+    background: url('./bigstock-Developing-Programming-And-Cod-252898846.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main .content{
+    max-width: 800px;
+}
+.main .content h2{
+    color: white;
+    font-size: 36px;
+    font-weight: 500;
+}
+.main .content h2 span{
+    font-size: 60px;
+    font-weight: 600;
+}
+.animated-text {
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+}
+.animated-text h3{
+    color: red;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+.animated-text h3:nth-child(1){
+    animation: text-move 10s infinite;
+}
+@keyframes text-move {
+    0%{
+        margin-top: -50;
+    }
+    25%{
+        margin-top: -70px;
+    }
+    50%{
+        margin-top: -140px;
+    }
+    75%{
+        margin-top: -70px;
+    }
+    100%{
+        margin-top:0 ;
+    }
+}
+
+.btn{
+    color: white;
+    background: red;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    margin: 30px 0;
+    padding:10px 10px 10px 10px;
+    transition: .5s ease;
+}
+.btn:hover{
+    background: white;
+    color: black;
+}
+.bn{
+    color: red;
+    font-size: 17px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px ;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    border: 2px solid crimson;
+    margin: 30px 0;
+    transition: .5s ease;
+}
+.bn:hover{
+    background: red;
+    color: black;
+}
+
+.media-icons a{
+    color: white;
+    font-size: 25px;
+    margin-right: 30px;
+
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-title{
+    position: relative;
+    color: red;
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+.section-title::before{
+    content: '';
+    position: absolute;
+    top:56px ;
+    left: 50%;
+    width: 140px;
+    height: 4px;
+    background: red;
+    transform: translateX(-50%);
+}
+.section-title::after{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background:red;
+
+}
+.abaut .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.abaut .content .col-left{
+    position: relative;
+    width: 45%;
+}
+.abaut .content .col-right{
+    position: relative;
+    width: 45%;
+    color: #667;
+}
+.abaut .content .img-card{
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+}
+.abaut .content .img-card img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.abaut .content-title{
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.ime-text{
+    font-size: 17px;
+}
+
+.skillis{
+    background: #000016;
+}
+.skillis .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 20px;
+}
+
+.skillis .col-left{
+    position: relative;
+    width: 45%;
+
+}
+
+.skillis .col-left .content-title{
+    margin-bottom:20px ;
+}
+
+.skillis .col-right{
+    position: relative;
+    width: 50%;
+}
+.skillis .col-right .bar{
+    margin-bottom: 14px;
+    padding: 10px;
+
+}
+
+.skillis .col-right .bar .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+
+
+.skillis .info span{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+.skillis .line{
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background: #ccc;
+    border-radius: 2px;
+}
+.skillis .line::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+}
+.skillis .html::before{
+    width: 51%;
+    background:#E45126 ;
+}
+
+.skillis .css::before{
+    width: 42%;
+    background:#0C73B8 ;
+}
+
+.skillis .bootstap::before{
+    width: 39%;
+    background:red ;
+}
+
+.skillis .javascript::before{
+    width: 20%;
+    background:yellow ;
+}
+
+.work{
+    background: #000016;
+}
+
+.work .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.work .content .card{
+    width: 340px;
+    margin: 15px;
+}
+
+.work .content .card-img{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.work .content .card-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+.work .content .card-img img:hover{
+    transform:scale(1.2) ;
+}
+
+.contact .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contact .content .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contact .row .card{
+    background: white;
+    width: 240px;
+    margin: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba( 1 1 1 /15%);
+    border-radius: 10px;
+}
+
+.contact .card .contact-icon{
+    color: red;
+    font-size: 60px;
+    text-align: center;
+    transition: transform .5s ease;
+}
+
+.contact .card:hover{
+    transform: translateY(-10px);
+}
+
+.contact .card .info h3{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.contact .card .info span{
+    color: #666;
+    font-weight: 500;
+}
+
+.contact-form{
+    background: white;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow:0 5px 25px rgba( 1 1 1 /15%) ;
+}
+
+.contact-form h3{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-form.input-box{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+    color: black;
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact-form .input-box .send-btn{
+    color: white;
+    background: rgb(197, 12, 12);
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    bottom: none;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.contact-form .input-box .sead-btn:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding:34px ;
+}
+.footer .footer-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer p{
+    font-size: 10px;
+}
+
+@media(max-width:1049px){
+    header{
+        padding: 12px 20px;
+    }
+    header .sticky{
+        padding: 10px 20px;
+    }
+    /* header .naviagtsion{
+        display: none;
+    } */
+
+    .menu-btn.active{
+        z-index: 999;
+        background: url('./rasm2.png')no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 4s ease;
+    }
+    /* .menu-btn{
+        position: absolute;
+        background: url('./corsair-icue-lt100-15.jpg' )no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: 4s ease;
+    } */
+    section{
+        padding: 80px 20px;
+    }
+    .main .content h2{
+        font-size: 25px;
+    }
+    .main .content h3{
+        font-size: 35px;
+    }
+    .section-title{
+        font-size: 36px;
+    }
+
+    .abaut .content{
+        flex-direction: column;
+    }
+    .abaut .content .column{
+        position: relative;
+        width: 100%;
+    }
+    .abaut .content .col-right{
+        margin-top: 40px;
+
+    }
+    .skillis .content{
+        flex-direction: column;
+    }
+    .skillis .content .column{
+        position: relative;
+        width: 100%;
+    }
+    .skillis .content .col-right{
+        margin-top: 40px;
+    }
+    .contact-form{
+        padding: 35px 40px;
+    }
+}
+
+
+.scrollToTop-btn{
+    z-index: 999;
+    position: fixed;
+    background: red;
+    color: white;
+    width: 45px;
+    height: 45px;
+    right: 0;
+    bottom: 10px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 3px;
+    cursor: pointer;
+    
+    transition:all .3s ease ;
+}
+
+
+
+
+
+
+
+
+
+
+
+

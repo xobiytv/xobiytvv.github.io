@@ -1,0 +1,61 @@
+*{
+    padding: 0px ;
+    margin: 0px ;
+
+}
+ 
+.lesson{
+    width: 100%;
+    height: 660px;
+    background: url(Layer\ 23.png);
+    border: 0.1px solid rgb(255, 255, 255);
+   
+}
+.lesson .blok1 {
+    width: 510px;
+   margin-top: +130px;
+    height: 530px;
+    margin: 0% 0% 0% 35%;
+    background: #e66768;
+}
+.lesson .blok1 .blok3 .name {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+}
+.lesson .blok1 .blok3 .name input{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: #e66768;
+    padding: 5px 10px 25px 10px;
+   margin: 0px 5px 10px 0px;
+  
+}
+.lesson .blok1 .blok3 .coment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px 390px 55px 10px;
+    
+   
+}
+.lesson .blok1 .blok3 .coment input{
+    background: #e66768;
+    padding: 5px 200px 65px 10px;
+   color: white;
+}
+
+ .lesson .blok2 {
+    width: 100%;
+    margin-top: -400px;
+    background: url(Layer\ 23.png);
+}
+.lesson .blok1 .blok4{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+} 
